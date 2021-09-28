@@ -2,19 +2,20 @@
 $dice = 0;
 $sum = 0;
 
-do {
+while ($sum < 40){
 $dice++;
 $num = rand(1, 6);
-printf("%d回目 = %d<br>", $dice, $num);
+echo $dice ."回目" .$num. "<br/>";
 $sum += $num;
 } 
-while ($sum < 40);
-printf("合計%d回でゴールしました。<br>", $dice);
+echo "合計" .$dice ."回でゴールしました。";
 ?>
 
 <br />
+<br />
 
 <?php
+date_default_timezone_set ('Asia/Tokyo');
 $time = intval(date('H'));
 if (6 <= $time && $time <= 11) {
 echo "今" .$time. "時台です";
