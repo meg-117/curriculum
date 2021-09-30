@@ -1,0 +1,27 @@
+body {
+    background-color: #808080;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size:150%;
+    color:white;
+    margin-top: 100px;
+    font-family: "游明朝";
+}
+
+form {
+    margin-top: 50px;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    margin-top: 50px;
+    color: white;
+}
+
