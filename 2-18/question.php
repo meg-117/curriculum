@@ -29,7 +29,7 @@
 <form action="answer.php" method="post">
 <?php
 foreach ($number as $value) {?>
-<input type="radio" name="number" value="<?php echo $value; ?>"/>
+<input type="radio" name="number_kotae" value="<?php echo $value; ?>"/>
 <?php echo $value;
 }
 ?>
@@ -37,7 +37,7 @@ foreach ($number as $value) {?>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 foreach ($language as $value) {?>
-<input type="radio" name="language" value="<?php echo $value; ?>"/>
+<input type="radio" name="language_kotae" value="<?php echo $value; ?>"/>
 <?php echo $value;
 }
 ?>
@@ -45,29 +45,30 @@ foreach ($language as $value) {?>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 foreach ($command as $value) {?>
-<input type="radio" name="command" value="<?php echo $value; ?>"/>
+<input type="radio" name="command_kotae" value="<?php echo $value; ?>"/>
 <?php echo $value;
 }
 ?>
 <br />
 <br />
-<input type="submit" value="回答する" />
+
 
 <!--問題の正解の変数と名前の変数を[answer.php]に送る-->
 <?php
-$answer_number = "20";
+$answer_number = "80";
 $answer_language = "HTML";
-$answer_command = "insert";
+$answer_command = "select";
 ?>
 
 <input type="hidden" name="my_name" value="<?php echo $my_name; ?>"/>
-<input type="hidden" name="number" value ="<?php echo $value; ?>"/>
-<input type="hidden" name="answer" value ="<?php echo $answer_number; ?>"/>
-<input type="hidden" name="language" value ="<?php echo $value; ?>"/>
-<input type="hidden" name="answer" value ="<?php echo $answer_language; ?>"/>
-<input type="hidden" name="command" value ="<?php echo $value; ?>"/>
-<input type="hidden" name="answer" value ="<?php echo $answer_command; ?>"/>
+<input type="hidden" name="number_kotae" value ="<?php echo $value; ?>"/>
+<input type="hidden" name="answer_number" value ="<?php echo $answer_number; ?>"/>
+<input type="hidden" name="language_kotae" value ="<?php echo $value; ?>"/>
+<input type="hidden" name="answer_language" value ="<?php echo $answer_language; ?>"/>
+<input type="hidden" name="command_kotae" value ="<?php echo $value; ?>"/>
+<input type="hidden" name="answer_command" value ="<?php echo $answer_command; ?>"/>
 
+<input type="submit" value="回答する" />
 </form>
 
 </body>

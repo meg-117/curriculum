@@ -15,10 +15,16 @@
 <?php 
 //[question.php]から送られてきた名前の変数、選択した回答、問題の答えの変数を作成
 $my_name = $_POST['my_name'];
-$number = $_POST['number'];
-$answer = $_POST['answer'];
-$language = $_POST['language'];
-$command = $_POST['command'];
+$number_kotae = $_POST['number_kotae'];
+$answer_number = $_POST['answer_number'];
+$language_kotae = $_POST['language_kotae'];
+$answer_language = $_POST['answer_language'];
+$command_kotae = $_POST['command_kotae'];
+$answer_command = $_POST['answer_command'];
+var_dump ($number_kotae);
+var_dump ($language_kotae);
+var_dump ($command_kotae);
+
 
 //選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
 
@@ -35,18 +41,18 @@ function check($check,$answer){
 	}
 }
 
-check ($number,$answer);
+check ($number_kotae,$answer_number);
 
 ?>
 
 <p>②の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
 <?php
-check ($language,$answer);
+check ($language_kotae,$answer_language);
 ?>
 
 <p>③の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
 <?php
-check ($command,$answer);
+check ($command_kotae,$answer_command);
 ?>
