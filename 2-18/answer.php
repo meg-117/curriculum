@@ -21,9 +21,6 @@ $language_kotae = $_POST['language_kotae'];
 $answer_language = $_POST['answer_language'];
 $command_kotae = $_POST['command_kotae'];
 $answer_command = $_POST['answer_command'];
-var_dump ($number_kotae);
-var_dump ($language_kotae);
-var_dump ($command_kotae);
 
 
 //選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する

@@ -61,11 +61,8 @@ $answer_command = "select";
 ?>
 
 <input type="hidden" name="my_name" value="<?php echo $my_name; ?>"/>
-<input type="hidden" name="number_kotae" value ="<?php echo $value; ?>"/>
 <input type="hidden" name="answer_number" value ="<?php echo $answer_number; ?>"/>
-<input type="hidden" name="language_kotae" value ="<?php echo $value; ?>"/>
 <input type="hidden" name="answer_language" value ="<?php echo $answer_language; ?>"/>
-<input type="hidden" name="command_kotae" value ="<?php echo $value; ?>"/>
 <input type="hidden" name="answer_command" value ="<?php echo $answer_command; ?>"/>
 
 <input type="submit" value="回答する" />
