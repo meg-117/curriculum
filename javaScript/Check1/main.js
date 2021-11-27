@@ -17,6 +17,13 @@ console.log();
 return getNumGas;
 }
 
+class cars {
+    constractar(gas,num){
+        this.gas = gas;
+        this.num = num;
+    }
+}
+
 let gas = car ('〇〇');
 let num = car ('△△');
 
